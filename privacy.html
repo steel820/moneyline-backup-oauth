@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the personal Moneyline Backup Google Drive OAuth application.">
+  <title>Privacy Policy — Moneyline Backup</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f5f7fb; color: #203049; line-height: 1.65; }
+    main { width: min(760px, calc(100% - 32px)); margin: 48px auto; background: white; padding: clamp(24px, 5vw, 48px); border: 1px solid #dee5ef; border-radius: 14px; box-shadow: 0 10px 30px #1b3a6120; }
+    .eyebrow { margin: 0 0 8px; font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; color: #456b9b; font-weight: 700; }
+    h1 { font-size: clamp(2rem, 5vw, 2.7rem); line-height: 1.15; margin: 0 0 12px; color: #142946; }
+    h2 { font-size: 1.15rem; margin: 28px 0 8px; color: #193a62; }
+    p { margin: 0 0 15px; }
+    a { color: #155ca8; text-underline-offset: 3px; }
+    .date { font-size: .9rem; color: #536479; }
+    footer { margin-top: 32px; padding-top: 20px; border-top: 1px solid #dce5ee; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Personal backup utility</p>
+    <h1>Privacy Policy</h1>
+    <p class="date">Moneyline Backup · Effective October 26, 2026</p>
+
+    <h2>Purpose</h2>
+    <p>Moneyline Backup is a personally operated desktop backup workflow. Its Google OAuth authorization allows the owner to use rclone with the owner's Google Drive account for private backup storage and recovery. It is not offered as a public service.</p>
+
+    <h2>Google data accessed</h2>
+    <p>The OAuth client requests the <code>drive.file</code> scope. That scope permits the application to create and manage files it creates or opens through the application, rather than unrestricted access to unrelated files in Google Drive. The workflow may access file names, metadata, contents and storage quota information needed to upload, list, verify and restore its own backups.</p>
+
+    <h2>How the data is used</h2>
+    <p>Google Drive access is used solely for backup storage, integrity checking and recovery initiated by the owner. Backup repository contents are encrypted locally using restic before upload. A non-secret recovery guide may also be stored as a readable document. The application does not use Google data for advertising or profiling.</p>
+
+    <h2>Storage and security</h2>
+    <p>OAuth credentials are stored locally in a user-restricted rclone configuration on the owner's computer. Backup encryption passphrases and OAuth tokens are not published on this website or committed to this public repository. Backup files are stored in the owner's Google Drive account.</p>
+
+    <h2>Sharing and website data</h2>
+    <p>The owner does not sell Google user data or share it with advertisers or data brokers. Google Drive hosts backup files at the owner's direction. This informational website has no account-registration form, tracking script, custom analytics or advertising cookies. GitHub Pages hosts the website and may process basic access information under GitHub's own policies.</p>
+
+    <h2>Retention and deletion</h2>
+    <p>Backups remain in the owner's Google Drive until removed under the owner's backup retention and deletion process. The owner can revoke this application's Google access through Google Account security settings. Revoking access stops future authorization but does not itself delete files already stored in Google Drive; those files must be deleted separately.</p>
+
+    <h2>Changes and contact</h2>
+    <p>This policy may be updated if the personal backup workflow changes. The effective date above will be revised when material changes are made. For privacy questions, contact the operator through the <a href="https://github.com/steel820" rel="noopener noreferrer">steel820 GitHub profile</a>.</p>
+
+    <footer><a href="./">Application homepage</a> · <a href="https://github.com/steel820/moneyline-backup-oauth" rel="noopener noreferrer">Public site source</a></footer>
+  </main>
+</body>
+</html>
