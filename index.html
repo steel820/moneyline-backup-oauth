@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Information about the personal Moneyline Backup Google Drive authorization application.">
+  <title>Moneyline Backup — OAuth Application Information</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f5f7fb; color: #203049; line-height: 1.65; }
+    main { width: min(720px, calc(100% - 32px)); margin: 72px auto; background: white; padding: clamp(24px, 5vw, 48px); border: 1px solid #dee5ef; border-radius: 14px; box-shadow: 0 10px 30px #1b3a6120; }
+    .eyebrow { margin: 0 0 8px; font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; color: #456b9b; font-weight: 700; }
+    h1 { font-size: clamp(2rem, 5vw, 2.7rem); line-height: 1.15; margin: 0 0 20px; color: #142946; }
+    h2 { margin: 28px 0 8px; font-size: 1.15rem; }
+    p { margin: 0 0 15px; }
+    a { color: #155ca8; text-underline-offset: 3px; }
+    .note { padding: 16px 18px; border-left: 4px solid #3a78be; background: #eef5fd; border-radius: 5px; }
+    footer { margin-top: 32px; padding-top: 20px; border-top: 1px solid #dce5ee; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Personal backup utility</p>
+    <h1>Moneyline Backup</h1>
+    <p>This page describes a personal-use Google Drive authorization application. It is used by its owner to store and recover backups of privately operated software and data.</p>
+    <div class="note"><strong>Not a public service.</strong> This application is for the owner's own Google account. It does not offer public registration, hosted betting predictions, or access to backup contents.</div>
+    <h2>How the backup works</h2>
+    <p>The owner uses <a href="https://rclone.org/" rel="noopener noreferrer">rclone</a> to connect to Google Drive and <a href="https://restic.net/" rel="noopener noreferrer">restic</a> to create encrypted backup repositories. Backup contents are encrypted locally before transfer to Google Drive.</p>
+    <h2>Google Drive permissions</h2>
+    <p>The authorization requests Google's <code>drive.file</code> permission, which limits access to files the application creates or opens. The application does not request unrestricted access to other Drive files.</p>
+    <h2>Privacy</h2>
+    <p>No passwords, access tokens, backup passphrases, or backup files are published on this website. Read the <a href="privacy.html">Privacy Policy</a> for details on data access and retention.</p>
+    <footer><a href="privacy.html">Privacy Policy</a> · <a href="https://github.com/steel820/moneyline-backup-oauth" rel="noopener noreferrer">Public site source</a></footer>
+  </main>
+</body>
+</html>
